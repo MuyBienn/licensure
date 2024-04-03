@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.content.Intent
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.widget.Button
 
 class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +14,16 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
         val logout = findViewById<ImageButton>(R.id.btn4)
+        val drivingschool: Button = findViewById(R.id.btn1)
+        val learnprocess: Button = findViewById(R.id.btn2)
+
+        learnprocess.setOnClickListener(){
+            intent = Intent(this, GuideActivity::class.java)
+        }
+
+        drivingschool.setOnClickListener(){
+            intent = Intent(this, locator_activity::class.java)
+        }
 
         logout.setOnClickListener {
             val builder = AlertDialog.Builder(this)

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".locator_activity"
+    android:background="@drawable/bg1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:src="@drawable/map1"
+            android:scaleType="center"
+            android:background="@drawable/layout_border">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        app:cardBackgroundColor="#95B7EC"
+        android:background="@drawable/layout_border">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_border"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Driving School"
+                    android:textColor="#F39319"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:paddingEnd="5dp"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2" />
+
+                <ImageView
+                    android:id="@+id/str1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/tv1"
+
+                    android:src="@drawable/star1">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/str2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/str1"
+                    android:src="@drawable/star1">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/str3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/str2"
+                    android:src="@drawable/star1">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/str4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toEndOf="@id/str3"
+                    android:src="@drawable/star1">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/str5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_toRightOf="@id/str4"
+                    android:src="@drawable/star1">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="More Info"
+                    android:textColor="#F39319"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv1"
+                    android:layout_toEndOf="@+id/bt1"
+                    android:background="@drawable/rounded_button"
+                    android:text="Ratings"
+                    android:textColor="#F39319"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv1"
+                    android:text="Directions"
+                    android:layout_alignEnd="@id/bt2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#F39319"
+                    android:background="@drawable/rounded_button"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/drimg1"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layout_border"
+                android:src="@drawable/img1">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_toEndOf="@id/drimg1"
+                android:background="@drawable/layout_border"
+                android:layout_below="@id/rl1"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/img2" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
