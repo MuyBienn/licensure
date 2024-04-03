@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/bg_licensure">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/DashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Homepage"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ff9900"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/DashboardTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_dashboard" >
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_edit_text"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:elevation="8dp"
+            android:outlineProvider="bounds"
+            android:src="@drawable/school_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/dsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"
+            android:text="Driving Schools"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@+id/btn1"
+            android:background="@drawable/rounded_edit_text"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:elevation="8dp"
+            android:outlineProvider="bounds"
+            android:src="@drawable/diagram_project_1_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_toRightOf="@+id/dsTxt"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="-10dp"
+            android:text="Learn Process"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_edit_text"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:elevation="8dp"
+            android:outlineProvider="bounds"
+            android:src="@drawable/profile_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/profTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn3"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="70dp"
+            android:text="Profile"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_toRightOf="@+id/btn3"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_edit_text"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:elevation="8dp"
+            android:outlineProvider="bounds"
+            android:src="@drawable/logout_3_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/lgtTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn4"
+            android:layout_toRightOf="@+id/profTxt"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="140dp"
+            android:text="Logout"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>
