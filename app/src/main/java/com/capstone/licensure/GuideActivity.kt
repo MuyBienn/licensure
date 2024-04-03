@@ -11,10 +11,10 @@ class GuideActivity : AppCompatActivity() {
         setContentView(R.layout.activity_guide)
 
         val button1 = findViewById<Button>(R.id.btn1)
-            button1.setOnClickListener() {
+        button1.setOnClickListener() {
             intent = Intent(this, SampleInformation::class.java)
             startActivity(intent)
-            }
+        }
 
         val button2 = findViewById<Button>(R.id.btn2)
         button2.setOnClickListener() {
